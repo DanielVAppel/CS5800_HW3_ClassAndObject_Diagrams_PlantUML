@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object generalShip {
+  name = "General Ship"
+  yearBuilt = "1990"
+}
+
+object cruiseLiner {
+  name = "Cruise Liner"
+  yearBuilt = "2005"
+  maxPassengers = 3000
+}
+
+object cargoCarrier {
+  name = "Cargo Carrier"
+  yearBuilt = "2010"
+  cargoCapacity = 50000
+}
+
+generalShip : Ship
+cruiseLiner : CruiseShip
+cargoCarrier : CargoShip
+@enduml

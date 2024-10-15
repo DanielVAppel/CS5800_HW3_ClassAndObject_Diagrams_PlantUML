@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object cs5800 {
+  courseName = "CS5800"
+}
+
+object nima {
+  firstName = "Nima"
+  lastName = "Davarpanah"
+  officeNumber = "3-2636"
+}
+
+object cleanCode {
+  title = "Clean Code"
+  author = "Robert C. Martin"
+  publisher = "Prentice Hall"
+}
+
+cs5800 : Course
+nima : Instructor
+cleanCode : Textbook
+cs5800 --> nima
+cs5800 --> cleanCode
+@enduml

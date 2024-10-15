@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object php_demo1 {
+  folderName = "php_demo1"
+}
+
+object sourceFiles {
+  folderName = "Source Files"
+}
+
+object publicFolder {
+  folderName = "public"
+}
+
+object indexPhp {
+  fileName = "index.php"
+}
+
+object readmeMd {
+  fileName = "README.md"
+}
+
+php_demo1 : Folder
+sourceFiles : Folder
+publicFolder : Folder
+indexPhp : File
+readmeMd : File
+
+php_demo1 *-- sourceFiles
+php_demo1 *-- publicFolder
+php_demo1 *-- indexPhp
+php_demo1 *-- readmeMd
+@enduml
